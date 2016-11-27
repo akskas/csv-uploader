@@ -1,0 +1,14 @@
+{{#if user}}
+<h2 class="page-header">Add New file</h2>
+<form method="post" enctype="multipart/form-data" action="/data/new">
+  <div class="form-group">
+    <label>File Name (optional)</label>
+    <input type="text" class="form-control" name="fileName" placeholder="ikarus_26_11_16.csv">
+  </div>
+  <div class="form-group">
+    <label>File</label>
+    <input type="file" name="thumbnail">
+  </div>
+  <button type="submit" class="btn btn-default">Select Fields</button>
+</form>
+{{/if}}

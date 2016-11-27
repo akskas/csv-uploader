@@ -1,0 +1,10 @@
+<h2 class="page-header">Your Files</h2>
+<ul class="nav nav-pills pull-right page-header">
+  <li role="presentation"><a href="/data/new">Add New</a></li>
+</ul>
+
+{{#each data}}
+  <li role="presentation"><a href="/data/{{_id}}">{{originalFileName}}</a></li>
+{{else}}
+  <p class="empty">You have not uploaded any files</p>
+{{/each}}

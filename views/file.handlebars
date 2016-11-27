@@ -1,0 +1,31 @@
+<h2 class="page-header">{{file.originalFileName}}</h2>
+<table>
+  {{#if file.fields.email}}
+    <th>{{file.fields.email}}</th>
+  {{/if}}
+  {{#if file.fields.name}}
+    <th>{{file.fields.name}}</th>
+  {{/if}}
+  {{#if file.fields.number}}
+    <th>{{file.fields.number}}</th>
+  {{/if}}
+  {{#if file.fields.location}}
+    <th>{{file.fields.location}}</th>
+  {{/if}}
+  {{#each data}}
+    <tr>
+      {{#if fields.email}}
+        <td> {{email}} </td>
+      {{/if}}
+      {{#if fields.name}}
+        <td> {{name}} </td>
+      {{/if}}
+      {{#if fields.number}}
+        <td> {{number}} </td>
+      {{/if}}
+      {{#if fields.location}}
+        <td> {{location}} </td>
+      {{/if}}
+    </tr>
+  {{/each}}
+</table>
